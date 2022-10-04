@@ -337,6 +337,47 @@ p {
   }
 }
 
+
+.button-go {
+
+  width: 100%;
+  margin-top: 40px;
+  max-width: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 19px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  border: 1px solid #FF5112;
+  border-radius: 15px;
+  font-family: $second-font;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+
+  cursor: pointer;
+  color: #fff;
+  background: #FF5112;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+  &:hover {
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #FF5112;
+    background: #fff;
+
+  }
+
+}
+
 .point {
   width: 100%;
   display: flex;
@@ -771,6 +812,7 @@ p {
   display: flex !important;
   align-items: center;
   justify-content: center;
+
   i {
     font-style: normal;
     font-size: 18px;
@@ -780,6 +822,7 @@ p {
     color: #FF5112;
     font-family: $second-font;
   }
+
   .marker-pin {
     display: flex;
     align-items: center;
@@ -875,6 +918,12 @@ p {
     height: 60px;
     padding: 12px 20px;
   }
+  .button-go {
+    font-size: 20px;
+    line-height: 1.2;
+    height: 60px;
+    padding: 12px 20px;
+  }
   .input input {
     padding: 12px 20px;
     height: 60px;
@@ -936,8 +985,30 @@ p {
 }
 
 
-
 @media screen and (max-width: 525px) {
+  .result-cont .point {
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  .result-cont .point::after {
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    transform: translate(0, 0);
+  }
+
+  .road p {
+    line-height: 1.2;
+  }
+  .button-go {
+    font-size: 18px;
+    line-height: 1.2;
+    height: 60px;
+    padding: 12px 20px;
+    max-width: 100%;
+    margin-top: 20px;
+  }
   .map-result {
     padding-top: 30px;
     padding-bottom: 30px;

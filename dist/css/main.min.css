@@ -686,6 +686,44 @@ p {
       -o-transition: color 0.3s ease;
       transition: color 0.3s ease; }
 
+.button-go {
+  width: 100%;
+  margin-top: 40px;
+  max-width: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 19px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #FF5112;
+  border-radius: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background: #FF5112;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease; }
+  .button-go:hover {
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #FF5112;
+    background: #fff; }
+
 .point {
   width: 100%;
   display: -webkit-box;
@@ -1294,6 +1332,11 @@ p {
     line-height: 1.2;
     height: 60px;
     padding: 12px 20px; }
+  .button-go {
+    font-size: 20px;
+    line-height: 1.2;
+    height: 60px;
+    padding: 12px 20px; }
   .input input {
     padding: 12px 20px;
     height: 60px;
@@ -1353,6 +1396,26 @@ p {
     height: 400px; } }
 
 @media screen and (max-width: 525px) {
+  .result-cont .point {
+    padding-right: 20px;
+    padding-top: 40px; }
+  .result-cont .point::after {
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  .road p {
+    line-height: 1.2; }
+  .button-go {
+    font-size: 18px;
+    line-height: 1.2;
+    height: 60px;
+    padding: 12px 20px;
+    max-width: 100%;
+    margin-top: 20px; }
   .map-result {
     padding-top: 30px;
     padding-bottom: 30px; }
